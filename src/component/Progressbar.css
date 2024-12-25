@@ -1,0 +1,72 @@
+/* src/CircularProgressBar.css */
+
+.progress-container {
+    text-align: center;
+    width: 100%;
+    max-width: 113px;
+  }
+  
+  .progress-circle {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+  }
+  
+  .progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  .progress-ring__circle {
+    transition: stroke-dashoffset 1.5s ease-out;
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40%;
+  }
+  
+  .logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .progress-percentage {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #27E98B;
+  }
+  
+  .progress-heading {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  @media (max-width: 600px) {
+    .progress-percentage {
+      font-size: 20px;
+    }
+  
+    .progress-heading {
+      font-size: 18px;
+    }
+
+    .progress-container {
+      max-width: 70px;
+    }
+    
+   
+  }
+  
