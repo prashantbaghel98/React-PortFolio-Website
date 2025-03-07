@@ -1,10 +1,12 @@
 {
   "name": "portfolio",
-  "homepage": "https://www.manoj.worldtricks4u.com",
+  "homepage": "https://github.com/rashantbaghel98/React-PortFolio-Website.git",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist" ,
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
